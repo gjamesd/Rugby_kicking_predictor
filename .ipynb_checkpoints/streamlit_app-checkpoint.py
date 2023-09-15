@@ -30,11 +30,12 @@ def fig1(data):
     fig = px.scatter(
     x=data['x_meters'],
     y=data['y_meters'],
-   color = data['result'],
+   color = data['fill'],
    opacity= data['opacity'], 
    title="Pitch Diagram With All Scrapped Data",
                     labels = {"color":'Make or Miss', 
-                             "x":"Meters From Try Line",  },
+                             "x":"Meters From Try Line", 
+                             "y":"Meters from touch (left)"},
                        height = 600
                     )
     
