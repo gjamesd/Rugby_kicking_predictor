@@ -240,7 +240,7 @@ if st.button('Calculate Probability '):
     #print probability 
     #
 
-    loaded_model = pickle.load(open('pickled_models/kicker_model.pkl', "rb"))
+    loaded_model = pickle.load(open('kicker_model.pkl', "rb"))
     
     if l_r == 'Left':
         l_r2 = x_m
