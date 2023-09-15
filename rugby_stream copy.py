@@ -1,15 +1,6 @@
 import streamlit as st
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
-from selenium.webdriver.common.by import By
-from tqdm import tqdm
+import pandas as pd
 import numpy as np 
 import plotly.express as px
 import plotly.graph_objects as go
@@ -17,22 +8,10 @@ from sklearn.cluster import KMeans
 
 from sklearn.metrics import confusion_matrix
 
+from sklearn.model_selection import train_test_split, RandomizedSearchCV
 
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split, GridSearchCV, RandomizedSearchCV
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score, classification_report 
-import numpy as np
-from sklearn.metrics import silhouette_score
 
-import warnings
-warnings.filterwarnings('ignore')
-from tqdm import tqdm
 from plotly.graph_objects import Layout
-from sklearn import metrics
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import GradientBoostingClassifier
-import xgboost as xgb
 import pickle
 
 st.set_page_config(
