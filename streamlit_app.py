@@ -4,11 +4,6 @@ import pandas as pd
 import numpy as np 
 import plotly.express as px
 import plotly.graph_objects as go
-from sklearn.cluster import KMeans
-
-from sklearn.metrics import confusion_matrix
-
-from sklearn.model_selection import train_test_split, RandomizedSearchCV
 
 
 from plotly.graph_objects import Layout
