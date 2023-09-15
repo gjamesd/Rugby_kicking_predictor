@@ -27,12 +27,8 @@ data = read_in_data()
 
 
 def fig1(data):
-    fig = px.scatter(
-    x=data['x_meters'],
-    y=data['y_meters'],
-   color = data['result'],
-   opacity= data['opacity'], 
-   title="Pitch Diagram With All Scrapped Data",
+    fig = px.scatter(x=df['x_meters'], y=df['y_meters'], color = data['result'], opacity= data['opacity'], 
+                     title="Pitch Diagram With All Scrapped Data",
                     labels = {"color":'Make or Miss', 
                              "x":"Meters From Try Line", 
                              "y":"Meters from touch (left)"},
