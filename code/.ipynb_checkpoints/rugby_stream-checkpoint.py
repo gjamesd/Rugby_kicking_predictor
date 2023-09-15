@@ -1,7 +1,6 @@
 import streamlit as st
 
 import pandas as pd
-import numpy as np 
 import plotly.express as px
 import plotly.graph_objects as go
 
@@ -240,7 +239,7 @@ if st.button('Calculate Probability '):
     #print probability 
     #
 
-    loaded_model = pickle.load(open('../pickled_models/kicker_model.pkl', "rb"))
+    loaded_model = pickle.load(open('pickled_models/kicker_model.pkl', "rb"))
     
     if l_r == 'Left':
         l_r2 = x_m
